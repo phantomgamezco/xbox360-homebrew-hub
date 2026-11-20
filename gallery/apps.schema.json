@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Xbox 360 Homebrew Hub gallery listings",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["name", "author", "repo", "description", "tested_on"],
+    "properties": {
+      "name": { "type": "string", "minLength": 1 },
+      "author": { "type": "string", "minLength": 1 },
+      "repo": { "type": "string", "pattern": "^https://github\\.com/[^/]+/[^/]+/?$" },
+      "description": { "type": "string", "minLength": 1 },
+      "tested_on": { "type": "string", "minLength": 1 }
+    }
+  }
+}

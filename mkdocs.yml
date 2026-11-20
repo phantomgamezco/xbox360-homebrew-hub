@@ -1,0 +1,40 @@
+site_name: Xbox 360 Homebrew Hub
+site_description: Documentation and starter resources for original Xbox 360 homebrew using Free60 libxenon.
+site_url: https://phantomgamezco.github.io/xbox360-homebrew-hub/
+repo_url: https://github.com/phantomgamezco/xbox360-homebrew-hub
+repo_name: phantomgamezco/xbox360-homebrew-hub
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+    - scheme: default
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Getting started: getting-started.md
+  - Hardware requirements: hardware-requirements.md
+  - API notes: api/index.md
+  - Troubleshooting: troubleshooting.md
+  - Community gallery: gallery.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: true
